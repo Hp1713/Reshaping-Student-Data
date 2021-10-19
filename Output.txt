@@ -1,0 +1,60 @@
+Initial Data Frame:Index(['full_name', 'gender_age', 'fractions', 'probability', 'grade'], dtype='object')
+Reshaped Data Frame:
+           full_name gender_age       grade       exam score
+0     Moses Kirckman        M14  11th grade  fractions   69%
+1    Timofei Strowan        M18  11th grade  fractions   63%
+2       Silvain Poll        M18   9th grade  fractions   69%
+3     Lezley Pinxton        M18  11th grade  fractions   NaN
+4  Bernadene Saunper        F17  11th grade  fractions   72%
+Index(['full_name', 'gender_age', 'grade', 'exam', 'score'], dtype='object')
+fractions      1000
+probability    1000
+Name: exam, dtype: int64
+
+Students with  duplicates:
+False    1976
+True       24
+dtype: int64
+
+Students with no duplicates:
+False    1976
+dtype: int64
+           full_name gender_age       grade       exam score gender age
+0     Moses Kirckman        M14  11th grade  fractions   69%      M  14
+1    Timofei Strowan        M18  11th grade  fractions   63%      M  18
+2       Silvain Poll        M18   9th grade  fractions   69%      M  18
+3     Lezley Pinxton        M18  11th grade  fractions   NaN      M  18
+4  Bernadene Saunper        F17  11th grade  fractions   72%      F  17
+
+Students data frame without gender_age column:
+           full_name       grade       exam score gender age
+0     Moses Kirckman  11th grade  fractions   69%      M  14
+1    Timofei Strowan  11th grade  fractions   63%      M  18
+2       Silvain Poll   9th grade  fractions   69%      M  18
+3     Lezley Pinxton  11th grade  fractions   NaN      M  18
+4  Bernadene Saunper  11th grade  fractions   72%      F  17
+
+Students data frame with columns first_name and last_name:
+           full_name       grade       exam score gender age first_name last_name
+0     Moses Kirckman  11th grade  fractions   69%      M  14      Moses  Kirckman
+1    Timofei Strowan  11th grade  fractions   63%      M  18    Timofei   Strowan
+2       Silvain Poll   9th grade  fractions   69%      M  18    Silvain      Poll
+3     Lezley Pinxton  11th grade  fractions   NaN      M  18     Lezley   Pinxton
+4  Bernadene Saunper  11th grade  fractions   72%      F  17  Bernadene   Saunper
+
+Student data frame with numeric value for column score for calculations:
+/nStudents data types:
+full_name      object
+grade           int64
+exam           object
+score         float64
+gender         object
+age            object
+first_name     object
+last_name      object
+dtype: object
+
+Average student grade:
+11.0
+Score Mean:77.69657422512235
+Score Mean:72.30971659919028
